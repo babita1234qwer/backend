@@ -95,5 +95,5 @@ const toggleLike = async (req, res) => {
 module.exports = {
     addComment,
     deleteComment,
-    getComments,toggleLike
+    getComments,toggleLikes
 };

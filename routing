@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const { addComment, deleteComment } = require('../controllers/commentController');
+const userMiddleware = require('../middleware/userMiddleware');
+
+// POST /comments
+router.post('/', userMiddleware, addComment);
+
+// DELETE /comments/:commentId
+router.delete('/:commentId', userMiddleware, deleteComment);
+
+module.exports = router;

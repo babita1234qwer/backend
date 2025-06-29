@@ -49,7 +49,7 @@ function Admin() {
   icon: CalendarPlus,
   color: 'btn-primary',
   bgColor: 'bg-primary/10',
-  route: '/admin/createcontest'
+  route: '/admins/createcontest'
 }
 
   ];
